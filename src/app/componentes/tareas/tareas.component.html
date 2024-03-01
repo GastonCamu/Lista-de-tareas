@@ -1,0 +1,21 @@
+<div class="main">
+    <h1>Lista de Tareas</h1>
+    <div>
+        <div class="formulario">
+            <input type="text" placeholder="titulo" [(ngModel)]="nuevaTarea.titulo">
+            <textarea cols="30" rows="10" placeholder="descripcion" [(ngModel)]="nuevaTarea.descripcion"></textarea>
+            <input type="date" [(ngModel)]="nuevaTarea.fecha">
+            <button (click)="agregarTarea()">Agregar Tarea</button>
+        </div>
+        <ul>
+            <li *ngFor="let tarea of listaTareas; let i = index">
+                <div>
+                    <p><b>Titulo: </b>{{tarea.titulo}}</p>
+                    <p><b>Fecha de vencimiento: </b>{{tarea.fecha}}</p>
+                    <p><b>Descripcion: </b>{{tarea.descripcion}}</p>
+                </div>
+                 <button (click)="eliminarTarea(i)">Eliminar</button>
+            </li> 
+        </ul>
+    </div>
+</div>

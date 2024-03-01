@@ -1,0 +1,91 @@
+* {margin: 0; padding: 0; border: 0; outline: 0;}
+div.main {
+    h1 {
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.726);
+        border-radius: 10px;
+        margin: 1vw 0;
+        padding: 1vw 0;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        div.formulario {
+            background-color: rgba(224, 215, 107, 0.842);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 35vw;
+            border-radius: 10px;
+
+            input {
+                text-align: center;
+                margin: 4vw 0;
+                background-color: transparent;
+                border-bottom: 1px solid black;
+            }
+
+            input::placeholder {
+                font-weight: bolder;
+                font-size: 15px;
+            }
+
+            textarea {
+                background-color: transparent;
+                border: 1px dashed black;
+                resize: none;
+            }
+            textarea::placeholder {
+                text-align: center;
+            }
+
+            button {
+                background: rgb(143,143,143);
+                background: linear-gradient(120deg, rgba(143,143,143,1) 80%, rgba(0,0,0,1) 100%);
+                border-radius: 12px;
+                color: white;
+                padding: 7px;
+            }
+        }
+        ul {
+            background-color: rgba(0, 0, 0, 0.596);
+            list-style: none;
+            max-width: 50vw;
+            max-height: 35vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            overflow-y: auto;
+            li {
+                margin: 4px 0;
+                background-color: rgba(255, 255, 255, 0.452);
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 3px;
+                padding: 5px;
+                max-height: 30vw;
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        font-size: 17px;
+                    }
+                }
+                button {
+                    text-align: center;
+                    width: 6vw;
+                    height: 2vw;
+
+                }
+            }
+        }
+    }
+}
